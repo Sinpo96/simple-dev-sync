@@ -1,0 +1,9 @@
+{
+  "name": "dev-sync-injector",
+  "version": "1.0.0",
+  "description": "for hot update receiver",
+  "main": "index.js",
+  "author": "Sinpo",
+  "license": "MIT",
+  "private": false
+}
