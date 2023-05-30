@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS"
+  },
+  "extends": "ts-node/node16/tsconfig.json",
+  "exclude": [
+    "node_modules"
+  ]
+}
