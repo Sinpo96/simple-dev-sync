@@ -2,8 +2,15 @@
   "name": "dev-sync-injector",
   "version": "1.0.0",
   "description": "for hot update receiver",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "Sinpo",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1",
+    "webpack": "^5.84.1"
+  }
 }
