@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { webpackPlugin: DevSyncInjector } = require('dev-sync-injector');
 
 module.exports = {
   mode: 'development',
@@ -10,7 +11,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   devServer: {},
-  plugins: [new HtmlWebpackPlugin(), new webpack.HotModuleReplacementPlugin()],
+  plugins: [new HtmlWebpackPlugin(), new DevSyncInjector(), new webpack.HotModuleReplacementPlugin()],
   module: {
     rules: [
       {
