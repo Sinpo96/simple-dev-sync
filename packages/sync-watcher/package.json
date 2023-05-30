@@ -5,5 +5,10 @@
   "main": "index.js",
   "author": "Sinpo",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "axios": "^1.4.0",
+    "fs-extra": "^11.1.1",
+    "nodemon": "^2.0.22"
+  }
 }
