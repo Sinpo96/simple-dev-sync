@@ -2,12 +2,14 @@
   "name": "sync-watcher",
   "version": "1.0.0",
   "description": "for watch files change",
-  "main": "index.js",
   "author": "Sinpo",
   "license": "MIT",
   "private": false,
   "bin": {
     "sync-watcher": "src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc"
   },
   "dependencies": {
     "@types/nodemon": "^1.19.2",
