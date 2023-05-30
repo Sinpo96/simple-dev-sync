@@ -1,6 +1,5 @@
 import {homedir} from 'os';
-
-const {join} = require('path');
+import {join} from 'path';
 
 const userHome = homedir();
 
@@ -16,4 +15,4 @@ const getPackagePath = (packageName: string): string => {
   return join(getStoreMainDir(), 'packages', packageName);
 };
 
-module.exports = getPackagePath;
+export default getPackagePath;

@@ -1,8 +1,21 @@
 {
   "compilerOptions": {
-    "module": "CommonJS"
+    "target": "es5",
+    "lib": [
+      "es2015"
+    ],
+    "module": "commonjs",
+    "declaration": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowJs": false,
+    "newLine": "LF"
   },
-  "extends": "ts-node/node16/tsconfig.json",
   "exclude": [
     "node_modules"
   ]

@@ -1,5 +1,3 @@
 #!/usr/bin/env ts-node
-let testAAA: number;
-testAAA = 1;
-testAAA += 1;
-console.log(testAAA);
+import monitor from './client/monitor';
+monitor();
