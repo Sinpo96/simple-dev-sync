@@ -1,5 +1,5 @@
-import { Compiler, Configuration } from 'webpack';
-import getPackagePath from '../utils/getPackagePath';
+import { Compiler } from 'webpack';
+import { getAllPackageStorePath } from '../utils/getPackagePath';
 
 class Plugin {
   private options: object;
@@ -20,12 +20,9 @@ class Plugin {
         webpackConfig.resolve.alias = {};
       }
 
-      // TODO traverse yalc root package store to add package path into alias
       webpackConfig.resolve.alias = {
         ...webpackConfig.resolve.alias,
-        // TODO need to add version in the path
-        // 'simplify-yalc-dev': `${getPackagePath('simplify-yalc-dev')}/1.0.0/`
-        'simplify-yalc-dev': '/Users/sinpo/.yalc/packages/simplify-yalc-dev/1.0.0'
+        ...getAllPackageStorePath()
       };
 
       console.log('webpackConfig.resolve.alias', webpackConfig.resolve.alias);
