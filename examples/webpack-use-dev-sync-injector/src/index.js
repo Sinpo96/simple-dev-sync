@@ -1,1 +1,5 @@
-console.log('111');
+const testFun = require('simplify-yalc-dev');
+
+testFun();
+
+console.log('4');

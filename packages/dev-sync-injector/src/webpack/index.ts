@@ -23,7 +23,8 @@ class Plugin {
       // TODO traverse yalc root package store to add package path into alias
       webpackConfig.resolve.alias = {
         ...webpackConfig.resolve.alias,
-        'simplify-yalc-dev': getPackagePath('simplify-yalc-dev')
+        // TODO need to add version in the path
+        'simplify-yalc-dev': `${getPackagePath('simplify-yalc-dev')}/1.0.0/`
       };
 
       console.log('webpackConfig', webpackConfig.resolve.alias);
