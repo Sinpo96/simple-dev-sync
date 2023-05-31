@@ -9,8 +9,8 @@ class Plugin {
   }
 
   apply(compiler: Compiler) {
-    compiler.hooks.emit.tap('dev-sync-injector', (compilation) => {
-      const webpackConfig = compilation.options as Configuration;
+    compiler.hooks.environment.tap('dev-sync-injector', () => {
+      const webpackConfig = compiler.options;
 
       if (!webpackConfig.resolve) {
         webpackConfig.resolve = {};
@@ -24,11 +24,13 @@ class Plugin {
       webpackConfig.resolve.alias = {
         ...webpackConfig.resolve.alias,
         // TODO need to add version in the path
-        'simplify-yalc-dev': `${getPackagePath('simplify-yalc-dev')}/1.0.0/`
+        // 'simplify-yalc-dev': `${getPackagePath('simplify-yalc-dev')}/1.0.0/`
+        'simplify-yalc-dev': '/Users/sinpo/.yalc/packages/simplify-yalc-dev/1.0.0'
       };
 
-      console.log('webpackConfig', webpackConfig.resolve.alias);
+      console.log('webpackConfig.resolve.alias', webpackConfig.resolve.alias);
     });
   }
 }
+
 export default Plugin;
