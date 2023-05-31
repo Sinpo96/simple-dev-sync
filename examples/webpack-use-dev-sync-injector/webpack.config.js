@@ -5,8 +5,6 @@ const { webpackPlugin: DevSyncInjector } = require('dev-sync-injector');
 
 module.exports = {
   mode: 'development',
-  // TODO whether need use cache:false
-  // cache: false,
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
