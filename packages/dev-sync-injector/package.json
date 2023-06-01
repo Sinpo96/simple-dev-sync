@@ -1,6 +1,6 @@
 {
   "name": "dev-sync-injector",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "for hot update receiver",
   "main": "dist/index.js",
   "author": "Sinpo",

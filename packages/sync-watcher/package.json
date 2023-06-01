@@ -1,6 +1,6 @@
 {
   "name": "sync-watcher",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "for watch files change",
   "author": "Sinpo",
   "license": "MIT",
