@@ -1,4 +1,4 @@
-[中文版](./README.cn.md)
+[中文版](https://github.com/Sinpo96/simple-dev-sync/blob/master/README.cn.md)
 
 # Simple-dev-sync
 

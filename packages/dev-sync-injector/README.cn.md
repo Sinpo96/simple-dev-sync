@@ -1,4 +1,4 @@
-[EngLish](./README.md)
+[EngLish](https://github.com/Sinpo96/simple-dev-sync/blob/master/packages/dev-sync-injector/README.md)
 
 # Dev-Sync-Injector
 
