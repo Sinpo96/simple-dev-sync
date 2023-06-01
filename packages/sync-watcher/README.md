@@ -1,3 +1,4 @@
+[中文版](./README.cn.md)
 # Sync-Watcher
 
 To start the sync-watcher, follow these instructions:

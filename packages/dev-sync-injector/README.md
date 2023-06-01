@@ -1,4 +1,6 @@
+[中文版](./README.cn.md)
 # Dev-Sync-Injector
+
 
 Dev-Sync-Injector is a plugin designed to be used by compilation tools.
 

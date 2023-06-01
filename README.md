@@ -1,4 +1,6 @@
-# simple-dev-sync
+[中文版](./README.cn.md)
+
+# Simple-dev-sync
 
 ## Description
 
