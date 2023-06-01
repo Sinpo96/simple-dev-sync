@@ -6,6 +6,7 @@ const runNodemon = () => {
   const { watchedDirectory, watchedExtensionList } = getConfig();
 
   // TODO verify yalc whether is installed.
+  // TODO if yalc not installed, try
 
   /* --- Start nodemon --- */
   nodemon({
