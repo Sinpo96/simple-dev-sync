@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": false,
   "bin": {
-    "sync-watcher": "src/index.ts"
+    "sync-watcher": "dist/index.js"
   },
   "scripts": {
     "build": "tsc"
