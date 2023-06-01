@@ -19,7 +19,7 @@ Please note that the `simplify-yalc-dev.config.js` file is not mandatory. If not
 
 # Sync-Watcher && Dev-Sync-Injector
 
-The sync-watcher can be used in conjunction with the dev-sync-injector, but please note that it is not mandatory.
+The sync-watcher can be used in conjunction with the [dev-sync-injector](https://www.npmjs.com/package/dev-sync-injector), but please note that it is not mandatory.
 
 They are independent and can be enabled separately.
 

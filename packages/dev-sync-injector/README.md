@@ -34,4 +34,4 @@ Dev-Sync-Injector currently only supports Webpack 4 and below.
 
 Support for Vite and Rollup will be added in the near future.
 
-Please note that Dev-Sync-Injector and Sync-Watcher are not tightly coupled and can work independently. They serve different purposes but can complement each other if needed.
+Please note that Dev-Sync-Injector and [Sync-Watcher](https://www.npmjs.com/package/sync-watcher?activeTab=readme) are not tightly coupled and can work independently. They serve different purposes but can complement each other if needed.
