@@ -5,7 +5,7 @@ import path from 'path';
 const runNodemon = () => {
   const { watchedDirectory, watchedExtensionList } = getConfig();
 
-  // TODO verify yalc whether is installed
+  // TODO verify yalc whether is installed.
 
   /* --- Start nodemon --- */
   nodemon({
