@@ -17,6 +17,10 @@
     "fs-extra": "^11.1.1",
     "webpack": "^5.84.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sinpo96/simple-dev-sync/blob/master/packages/dev-sync-injector/README.md"
+  },
   "keywords": [
     "yalc",
     "nodemon",

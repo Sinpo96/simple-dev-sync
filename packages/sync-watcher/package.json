@@ -19,6 +19,10 @@
     "fs-extra": "^11.1.1",
     "nodemon": "^2.0.22"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sinpo96/simple-dev-sync/blob/master/packages/sync-watcher/README.md"
+  },
   "keywords": [
     "yalc",
     "nodemon",
