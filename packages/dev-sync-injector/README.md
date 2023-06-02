@@ -7,6 +7,30 @@ Dev-Sync-Injector is a plugin designed to be used by compilation tools.
 It injects synchronization code during development to enable live reloading and hot module replacement.
 
 ## Usage
+### In the Project
+Note that to use the hot-reloading feature, you need to first include the local `package` in your project.
+
+#### Note
+- When used in conjunction with the package [sync-Watcher](https://www.npmjs.com/package/sync-watcher?activeTab=readme), after starting `sync-watcher`, it will automatically publish your package to the local `npm store`.
+
+
+- If you are using the `dev-sync-injector` plugin separately, you need to manually execute `yalc publish` to publish the package you want to debug to the local `npm store`.
+
+#### Import
+Using the example of the `testProject` package (already published to the local `npm store`):
+
+First, add `testProject` to your project where you will start Webpack, using `yalc add testProject`, to make `testProject` available in the local `npm store`.
+
+Please note that without this step, your `package` will not be properly monitored for synchronization!
+
+Then, import it into your project code:
+
+```javascript
+// First, import the test project
+import testProject from 'testProject';
+// Then, use the project
+testProject();
+```
 
 ### In Webpack
 To use Dev Sync Injector in Webpack, follow these steps:

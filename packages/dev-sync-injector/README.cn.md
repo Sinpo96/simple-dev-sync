@@ -8,6 +8,35 @@
 
 ## 使用
 
+---
+### 在项目中
+注意，想要使用热更新功能，得先在项目中引入本地的`package`
+
+
+#### 注意
+- 搭配使用[sync-Watcher](https://www.npmjs.com/package/sync-watcher?activeTab=readme)这个包时，启动`sync-watcher`之后，`sync-watcher`会自动将你的包发布到本地的`npm store`
+
+
+- 如果单独使用`dev-sync-injector`这个插件，则需要手动执行`yalc publish`将待调试的包发布到本地的`npm store`
+
+#### 导入
+以 `testProject` 这个测试用的package为例（已发布到本地的`npm store`的场景下）
+
+
+需要先在待启动`Webpack`的项目中，`yalc add testProject`，让`testProject`走到本地的`npm store`
+
+请注意，如果没有这一步，你的`package`将无法被正确监听去同步！
+
+然后在项目代码中引用
+```javascript
+// 首先，导入测试项目
+import testProject from 'testProject'
+// 然后，使用项目
+testProject()
+```
+
+---
+
 ### 在 Webpack 中
 要在 Webpack 中使用 Dev Sync Injector，请按照以下步骤进行操作：
 
