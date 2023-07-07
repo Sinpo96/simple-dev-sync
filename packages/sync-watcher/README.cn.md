@@ -11,13 +11,13 @@
 
 `Sync-watcher`可以接收用户的自定义配置
 
-你可以在你开发的 `npm` 包源代码的根目录下创建一个名为 `simplify-yalc-dev.config.js` 的文件。
+你可以在你开发的 `npm` 包源代码的根目录下创建一个名为 `simple-dev-sync.config.js` 的文件。
 
 该文件接受两个参数：
 - `watchedDirectory`: 指定要监视变化的目录。默认值为 `src`
 - `watchedExtensionList`: 指定要监视的文件扩展名列表。默认值为 `js`、`ts` 和 `json`
 
-请注意，`simplify-yalc-dev.config.js` 文件是可选的。
+请注意，`simple-dev-sync.config.js` 文件是可选的。
 
 如果不提供，`sync-watcher` 将使用上述默认值。
 

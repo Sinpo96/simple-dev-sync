@@ -10,13 +10,13 @@ To start the sync-watcher, follow these instructions:
 
 The sync-watcher provides an opportunity for custom configuration.
 
-You can create a file named `simplify-yalc-dev.config.js` in the root directory of your npm package source code.
+You can create a file named `simple-dev-sync.config.js` in the root directory of your npm package source code.
 
 This file accepts two parameters:
 - `watchedDirectory`: Specifies the directory to monitor for changes. The default value is `src`.
 - `watchedExtensionList`: Specifies the list of file extensions to watch. The default value is `js`, `ts`, and `json`.
 
-Please note that the `simplify-yalc-dev.config.js` file is not mandatory. If not provided, the sync-watcher will use the default values mentioned above.
+Please note that the `simple-dev-sync.config.js` file is not mandatory. If not provided, the sync-watcher will use the default values mentioned above.
 
 # Sync-Watcher && Dev-Sync-Injector
 

@@ -7,7 +7,7 @@ const getConfig = () => {
   const config = defaultConfig;
   try {
     // get customize config
-    const customConfigUrl = path.join(process.cwd(), 'simplify-yalc-dev.config.js');
+    const customConfigUrl = path.join(process.cwd(), 'simple-dev-sync.config.js');
 
     if (fs.pathExistsSync(customConfigUrl)) {
       // if customize config exist

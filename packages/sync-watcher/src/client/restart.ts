@@ -1,10 +1,14 @@
-import { exec } from 'child_process';
+import {execSync} from 'child_process';
+import getConfig from './mergeConfig';
 
-exec('yalc push', (error: any, stdout: any, stderr: any) => {
-  if (error) {
-    console.error(`执行命令时出错: ${error}`);
-    return;
-  }
+try {
+  const {scriptBeforePush} = getConfig();
 
-  console.log(stdout);
-});
+  const customScriptOutput = execSync(scriptBeforePush);
+  console.log(customScriptOutput.toString());
+
+  const yalcPushOutput = execSync('yalc push');
+  console.log(yalcPushOutput.toString());
+} catch (error) {
+  console.error(`检测到热更新执行命令时出错: ${error}`);
+}
