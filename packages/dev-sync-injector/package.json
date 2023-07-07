@@ -7,13 +7,15 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "push": "yarn run build && yalc push"
   },
   "devDependencies": {
     "ts-node": "^10.9.1"
   },
   "dependencies": {
     "@types/fs-extra": "^11.0.1",
+    "colors": "^1.4.0",
     "fs-extra": "^11.1.1",
     "webpack": "^5.84.1"
   },

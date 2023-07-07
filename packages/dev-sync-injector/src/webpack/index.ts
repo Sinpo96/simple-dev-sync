@@ -1,4 +1,5 @@
 import { Compiler } from 'webpack';
+import colors from 'colors';
 import { getAllPackageStorePath } from '../utils/getPackagePath';
 
 class Plugin {
@@ -25,7 +26,8 @@ class Plugin {
         ...getAllPackageStorePath()
       };
 
-      console.log('webpackConfig.resolve.alias', webpackConfig.resolve.alias);
+      console.log(colors.yellow('\ndev-sync-injector injecting packages...'));
+      console.log(colors.green('\nwebpackConfig.resolve.alias'), webpackConfig.resolve.alias);
     });
   }
 }
