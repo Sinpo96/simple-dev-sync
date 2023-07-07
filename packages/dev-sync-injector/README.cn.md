@@ -46,7 +46,7 @@ testProject()
 
 2. 在 `Webpack` 配置文件中导入:
    ```javascript
-   const DevSyncInjector = require('dev-sync-injector');
+   const { webpackPlugin: DevSyncInjector } = require('dev-sync-injector');
 
 3. 将插件添加到 Webpack 配置的 `plugins` 部分:
    ```javascript

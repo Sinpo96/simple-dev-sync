@@ -41,7 +41,7 @@ To use Dev Sync Injector in Webpack, follow these steps:
 
 2. Import the plugin in your Webpack configuration file:
    ```javascript
-   const DevSyncInjector = require('dev-sync-injector');
+   const { webpackPlugin: DevSyncInjector } = require('dev-sync-injector');
    
 3. Add the plugin to the `plugins` section of your Webpack configuration:
    ```javascript
